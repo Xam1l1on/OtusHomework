@@ -17,7 +17,7 @@ namespace TableInConsole
             for (int i = 0; i < 3; i++)
             {
                 switch (i)
-                {
+                { 
                     case 0:
                         Console.WriteLine($"{symbolPlus}{horizontalBorder}{symbolPlus}");
                         PrintFirstLine(n, s, widthString);
