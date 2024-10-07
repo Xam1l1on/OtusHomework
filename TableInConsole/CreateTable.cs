@@ -13,23 +13,23 @@ namespace TableInConsole
         {
             Console.Clear();
             int widthString = 2 * n + s.Length;
-            horizontalBorder = new string (symbolPlus, widthString);
+            horizontalBorder = new string (symbolPlus, widthString + 2);
             for (int i = 0; i < 3; i++)
             {
                 switch (i)
                 { 
                     case 0:
-                        Console.WriteLine($"{symbolPlus}{horizontalBorder}{symbolPlus}");
+                        Console.WriteLine($"{horizontalBorder}");
                         PrintFirstLine(n, s, widthString);
                         break;
                     case 1:
-                        Console.WriteLine($"{symbolPlus}{horizontalBorder}{symbolPlus}");
+                        Console.WriteLine($"{horizontalBorder}");
                         PrintSecondLine(n,widthString);
                         break;
                     case 2:
-                        Console.WriteLine($"{symbolPlus}{horizontalBorder}{symbolPlus}");
+                        Console.WriteLine($"{horizontalBorder}");
                         PrintThirdLine(widthString);
-                        Console.WriteLine($"{symbolPlus}{horizontalBorder}{symbolPlus}");
+                        Console.WriteLine($"{horizontalBorder}");
                         break;
                 }
             }
@@ -44,7 +44,7 @@ namespace TableInConsole
                 }
                 else
                 {
-                    Console.WriteLine($"+" + new string(' ', n) + new string(' ', s.Length) + new string(' ', n) + "+");
+                    Console.WriteLine($"+" + new string(' ', totalWidth) + "+");
                 }
             }
         }
