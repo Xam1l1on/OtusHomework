@@ -19,17 +19,17 @@ namespace TableInConsole
                 switch (i)
                 { 
                     case 0:
-                        Console.WriteLine($"{horizontalBorder}");
+                        Console.WriteLine(horizontalBorder);
                         PrintFirstLine(n, s, widthString);
                         break;
                     case 1:
-                        Console.WriteLine($"{horizontalBorder}");
+                        Console.WriteLine(horizontalBorder);
                         PrintSecondLine(n,widthString);
                         break;
                     case 2:
-                        Console.WriteLine($"{horizontalBorder}");
+                        Console.WriteLine(horizontalBorder);
                         PrintThirdLine(widthString);
-                        Console.WriteLine($"{horizontalBorder}");
+                        Console.WriteLine(horizontalBorder);
                         break;
                 }
             }

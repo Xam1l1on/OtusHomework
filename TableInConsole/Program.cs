@@ -14,7 +14,7 @@
                 Console.WriteLine($"Это не число. Пока");
                 return;
             }
-            else if (userNumber < 1 && userNumber > 6)
+            else if (userNumber < 1 || userNumber > 6)
             {
                 Console.WriteLine("Число должно быть больше 1 и меньше 6");
                 return;
@@ -34,7 +34,10 @@
                 userString = userString.Remove(userString.Length - userNumber - excessSymbols);
                 CreateTable.WriteTable(userNumber, userString);
             }
-            
+            else
+            {
+                CreateTable.WriteTable(userNumber, userString);
+            }
         }
 
     }
