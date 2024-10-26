@@ -63,10 +63,10 @@ namespace SolvingQuadraticEquation
                 }
                 else
                 {
-                    throw new Exception("Вещественных значений не найдено");
+                    throw new NotSolvingException("Вещественных значений не найдено");
                 }
             }
-            catch (Exception ex)
+            catch (NotSolvingException ex)
             {
                 if (ex.Message == "Вещественных значений не найдено")
                 {
