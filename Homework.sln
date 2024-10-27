@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsComparison", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolvingQuadraticEquation", "SolvingQuadraticEquation\SolvingQuadraticEquation.csproj", "{52EDB2BA-187C-4C8A-A8AE-DA479344045D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementationOfCollectionClass", "ImplementationOfCollectionClass\ImplementationOfCollectionClass.csproj", "{354877A5-17A4-4EC0-ACF9-DEFC6E8CDDB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementationOfCollectionClass", "ImplementationOfCollectionClass\ImplementationOfCollectionClass.csproj", "{354877A5-17A4-4EC0-ACF9-DEFC6E8CDDB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A2D40026-2B3B-46BF-951A-B17F54898859}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{354877A5-17A4-4EC0-ACF9-DEFC6E8CDDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{354877A5-17A4-4EC0-ACF9-DEFC6E8CDDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{354877A5-17A4-4EC0-ACF9-DEFC6E8CDDB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D40026-2B3B-46BF-951A-B17F54898859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D40026-2B3B-46BF-951A-B17F54898859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D40026-2B3B-46BF-951A-B17F54898859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D40026-2B3B-46BF-951A-B17F54898859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
