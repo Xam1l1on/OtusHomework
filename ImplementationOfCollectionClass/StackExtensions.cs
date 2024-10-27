@@ -10,7 +10,11 @@ namespace ImplementationOfCollectionClass
     {
         public static Stack Merge(this Stack stack, Stack stack1)
         {
-            stack1 = new Stack();
+            for (var i = stack1.Size; i > 0; i--)
+            {
+               stack.Add(stack1.Top);
+               stack1.Pop();
+            }
             return stack;
         }
     }

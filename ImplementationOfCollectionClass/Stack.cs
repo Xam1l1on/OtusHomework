@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +10,7 @@ namespace ImplementationOfCollectionClass
 {
     internal class Stack
     {
+
         private List<string> _elementsList;
 
         public Stack(params string[] initialElementsList)
@@ -22,14 +25,17 @@ namespace ImplementationOfCollectionClass
 
         public string Pop()
         {
-            if (_elementsList.Count == 0)
+            try
             {
-                throw new InvalidOperationException("Стек пустой");
+                string topElement = _elementsList[^1];
+                _elementsList.RemoveAt(_elementsList.Count - 1);
+                return topElement;
+            }
+            catch (IndexOutOfRangeException)
+            {
+                return "Стэк пустой";
             }
 
-            string topElement = _elementsList[^1];
-            _elementsList.RemoveAt(_elementsList.Count - 1);
-            return topElement;
         }
 
         public int Size
@@ -41,18 +47,30 @@ namespace ImplementationOfCollectionClass
         {
             get
             {
-                if( _elementsList.Count == 0)
+                try
                 {
-                    throw new NullReferenceException("Стек пустой");
+                    string topElement = _elementsList[_elementsList.Count - 1];
+                    return topElement;
                 }
-                string topElement = _elementsList[_elementsList.Count - 1];
-                return topElement;
+                catch (ArgumentOutOfRangeException)
+                {
+                    return null;
+                }
             }
         }
-        public static Stack Concat(Stack[] stackArray)
+        public static Stack Concat(params Stack[] stackArray)
         {
-
-            return new Stack();
+            Stack stack = new Stack();
+            for (int i = 0; i <= stackArray.Length - 1; i++)
+            {
+                for (int j = stackArray[i].Size; j > 0; j--)
+                {
+                    stack.Add(stackArray[i].Top);
+                    stackArray[i].Pop();
+                }
+            }
+            return stack;
         }
     }
+
 }
