@@ -3,23 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace AnonymousTypesTuplesLambdaExpressions
 {
-    internal class CatalogPlanets
+    class CatalogPlanetsDelegate
     {
         List<Planet> planets;
         private int requestCount = 0;
 
-        public CatalogPlanets() 
+        public CatalogPlanetsDelegate()
         {
-            Planet venera = new Planet("Венера",2, 38024);
+            Planet venera = new Planet("Венера", 2, 38024);
             Planet earth = new Planet("Земля", 3, 40075, venera);
             Planet mars = new Planet("Марс", 4, 21344, earth);
-            planets = new List<Planet> { venera,earth,mars };
+            planets = new List<Planet> { venera, earth, mars };
         }
-        internal (ushort?, int?, string) GetPlanet(string namePlanet)
+        internal (ushort?, int?, string) GetPlanet(string namePlanet,Func<string> func)
         {
             requestCount++;
             if (requestCount % 3 == 0)

@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolvingQuadraticEquation", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementationOfCollectionClass", "ImplementationOfCollectionClass\ImplementationOfCollectionClass.csproj", "{354877A5-17A4-4EC0-ACF9-DEFC6E8CDDB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A2D40026-2B3B-46BF-951A-B17F54898859}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A2D40026-2B3B-46BF-951A-B17F54898859}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousTypesTuplesLambdaExpressions", "AnonymousTypesTuplesLambdaExpressions\AnonymousTypesTuplesLambdaExpressions.csproj", "{F9BF1338-317F-4F2C-81A4-F7D0E2DC5D87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnonymousTypesTuplesLambdaExpressions", "AnonymousTypesTuplesLambdaExpressions\AnonymousTypesTuplesLambdaExpressions.csproj", "{F9BF1338-317F-4F2C-81A4-F7D0E2DC5D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsAndRecursions", "LoopsAndRecursions\LoopsAndRecursions.csproj", "{1741BDC5-9B66-450E-BDFC-DEB9C9BB1D75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F9BF1338-317F-4F2C-81A4-F7D0E2DC5D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9BF1338-317F-4F2C-81A4-F7D0E2DC5D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9BF1338-317F-4F2C-81A4-F7D0E2DC5D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1741BDC5-9B66-450E-BDFC-DEB9C9BB1D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1741BDC5-9B66-450E-BDFC-DEB9C9BB1D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1741BDC5-9B66-450E-BDFC-DEB9C9BB1D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1741BDC5-9B66-450E-BDFC-DEB9C9BB1D75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
