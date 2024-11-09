@@ -18,14 +18,18 @@ namespace AnonymousTypesTuplesLambdaExpressions
             Planet mars = new Planet("Марс", 4, 21344, earth);
             planets = new List<Planet> { venera, earth, mars };
         }
-        internal (ushort?, int?, string) GetPlanet(string namePlanet,Func<string> func)
+        internal (ushort?, int?, string) GetPlanet(string namePlanet, Func<string, string> PlanetValidatorDelegate)
         {
-            requestCount++;
-            if (requestCount % 3 == 0)
+            string validatorError = PlanetValidatorDelegate(namePlanet);
+            if (validatorError != null)
             {
-                return (null, null, "Вы спрашиваете слишком часто");
+                return (null, null, validatorError);
             }
-
+            //requestCount++;
+            //if (requestCount % 3 == 0)
+            //{
+            //    return (null, null, "Вы спрашиваете слишком часто");
+            //}
             Planet foundPlanet = planets.Find(p => p.Name.Equals(namePlanet));
             if (foundPlanet != null)
             {
