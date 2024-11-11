@@ -1,20 +1,31 @@
-﻿namespace LoopsAndRecursions
+﻿using System.Diagnostics;
+
+namespace LoopsAndRecursions
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите число");
-            int number;
-            bool i = int.TryParse(Console.ReadLine(), out number);
-            if (i) 
+            Stopwatch sw = Stopwatch.StartNew();
+            do
             {
-                var resultRecursion = FibonacciSequenceRecursion(number);
-                Console.WriteLine($"Введеное число {number}. Результат рекурсии {resultRecursion}");
+                Console.WriteLine();
+                Console.WriteLine("Введите число");
+                int number;
+                bool i = int.TryParse(Console.ReadLine(), out number);
 
+                sw.Start();
+                var resultRecursion = FibonacciSequenceRecursion(number);
+                sw.Stop();
+                Console.WriteLine($"Введеное число {number}. Результат рекурсии {resultRecursion}. Затраченное время: {sw.Elapsed.ToString()}");
+                sw.Restart();
+                sw.Start();
                 var resultLoop = FibonacciSequenceLoop(number);
-                Console.WriteLine($"Введеное число {number}. Результат цикла {resultLoop}");
-            }
+                sw.Stop();
+                Console.WriteLine($"Введеное число {number}. Результат цикла {resultLoop}. Затраченное время: {sw.Elapsed.ToString()}");
+                sw.Restart();
+                Console.WriteLine("Нажмите пробел для выхода из проограммы");
+            } while (Console.ReadLine() != " ");
         }
         internal static int FibonacciSequenceRecursion(int n)
         {
