@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnonymousTypesTuplesLambdaE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoopsAndRecursions", "LoopsAndRecursions\LoopsAndRecursions.csproj", "{1741BDC5-9B66-450E-BDFC-DEB9C9BB1D75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesAndPiles", "TreesAndPiles\TreesAndPiles.csproj", "{9E646CCC-AF30-4563-9418-EBE2418370EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreesAndHeap", "TreesAndPiles\TreesAndHeap.csproj", "{9E646CCC-AF30-4563-9418-EBE2418370EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
