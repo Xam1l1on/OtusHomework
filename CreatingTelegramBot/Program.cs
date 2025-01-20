@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using System.Threading;
 using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types.Enums;
@@ -7,6 +8,7 @@ namespace CreatingTelegramBot
     internal class Program
     {
         private static TelegramBotClient BotClient { get; set; }
+        private static char exitChar = 'A';
         static async Task Main(string[] args)
         {
             SettingTelegramBot();
@@ -17,11 +19,24 @@ namespace CreatingTelegramBot
                 AllowedUpdates = [UpdateType.Message],
                 DropPendingUpdates = true
             };
+            CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
             var handler = new UpdateHandler();
             handler.OnHandleUpdateStarted += (message) => Console.WriteLine("Началась обработка сообщения '{0}'",message);
             handler.OnHandleUpdateCompleted += (message) => Console.WriteLine("Закончилась обработка сообщения '{0}'", message);
             BotClient.StartReceiving(updateHandler: handler, receiverOptions: receiver);
-            await Task.Delay(-1);
+            Console.WriteLine("Нажмите клавишу A для выхода");
+            while (!cancelTokenSource.IsCancellationRequested)
+            {
+                if (Console.ReadKey(true).Key != ConsoleKey.A)
+                {
+                    Console.WriteLine(whoIsBot.FirstName);
+                }
+                else
+                {
+                    cancelTokenSource.Cancel();
+                    //break;
+                }
+            }
         }
         private static void SettingTelegramBot()
         {
