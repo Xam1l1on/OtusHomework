@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoopsAndRecursions", "Loops
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreesAndHeap", "TreesAndPiles\TreesAndHeap.csproj", "{9E646CCC-AF30-4563-9418-EBE2418370EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingTelegramBot", "CreatingTelegramBot\CreatingTelegramBot.csproj", "{6429C41C-2CF1-4D2C-9FDE-E19F267FBACE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatingTelegramBot", "CreatingTelegramBot\CreatingTelegramBot.csproj", "{6429C41C-2CF1-4D2C-9FDE-E19F267FBACE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementationOfDictionary", "ImplementationOfDictionary\ImplementationOfDictionary.csproj", "{09BE263F-127C-47F7-81BB-A83D221D13FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{6429C41C-2CF1-4D2C-9FDE-E19F267FBACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6429C41C-2CF1-4D2C-9FDE-E19F267FBACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6429C41C-2CF1-4D2C-9FDE-E19F267FBACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09BE263F-127C-47F7-81BB-A83D221D13FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BE263F-127C-47F7-81BB-A83D221D13FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BE263F-127C-47F7-81BB-A83D221D13FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BE263F-127C-47F7-81BB-A83D221D13FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
