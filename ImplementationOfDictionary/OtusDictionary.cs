@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ImplementationOfDictionary
 {
-    internal class OtusDictionary<TKey,TValue> where TKey: notnull
+    internal class OtusDictionary
     {
         private int[] _buckets;
         private string[]? _entry;
