@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Dictionary<int, string> keyValuePairs = new Dictionary<int, string>();
+            
         }
     }
 }
