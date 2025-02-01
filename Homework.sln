@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementationOfDictionary"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservableImmutableConcurrentCollection", "ObservableImmutableConcurrentCollection\ObservableImmutableConcurrentCollection.csproj", "{C743E027-6546-4955-BC79-A07EAFD51C05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithFile", "WorkWithFile\WorkWithFile.csproj", "{D09E868F-35CA-4C26-8333-41E364863FC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{C743E027-6546-4955-BC79-A07EAFD51C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C743E027-6546-4955-BC79-A07EAFD51C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C743E027-6546-4955-BC79-A07EAFD51C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D09E868F-35CA-4C26-8333-41E364863FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09E868F-35CA-4C26-8333-41E364863FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09E868F-35CA-4C26-8333-41E364863FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09E868F-35CA-4C26-8333-41E364863FC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
