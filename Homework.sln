@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatingTelegramBot", "Crea
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementationOfDictionary", "ImplementationOfDictionary\ImplementationOfDictionary.csproj", "{09BE263F-127C-47F7-81BB-A83D221D13FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservableImmutableConcurrentCollection", "ObservableImmutableConcurrentCollection\ObservableImmutableConcurrentCollection.csproj", "{C743E027-6546-4955-BC79-A07EAFD51C05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObservableImmutableConcurrentCollection", "ObservableImmutableConcurrentCollection\ObservableImmutableConcurrentCollection.csproj", "{C743E027-6546-4955-BC79-A07EAFD51C05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithFile", "WorkWithFile\WorkWithFile.csproj", "{D09E868F-35CA-4C26-8333-41E364863FC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkWithFile", "WorkWithFile\WorkWithFile.csproj", "{D09E868F-35CA-4C26-8333-41E364863FC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL query", "SQL query", "{5DBE58F1-BF7A-4985-B978-1CDE971976BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
