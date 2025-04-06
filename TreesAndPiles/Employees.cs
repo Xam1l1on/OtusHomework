@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 
 namespace TreesAndHeap
 {
-    class Employees
+    class Employees<T>
     {
-        private  string _nameEmp;
-        private  double _salaryEmp;
-        public  string NameEmp { get { return _nameEmp; } set { _nameEmp = value; } }
-        public  double SalaryEmp { get { return _salaryEmp; } set { _salaryEmp = value; } }
+        public string Name { get; set; }
+        public T Value { get; set; }
+        public Employees<T> Left { get; set; }
+        public Employees<T> Right { get; set; }
 
-        public override string ToString()
+        public Employees(string name, T value)
         {
-            return NameEmp + " " + SalaryEmp;
+            Name = name;
+            Value = value;
         }
     }
 }
